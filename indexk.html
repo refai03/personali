@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <style>
+      .titolo {
+        font-size: 40px;
+
+        padding: 0.05px;
+        background-color: yellow
+      }
+      .scorre {
+        padding:5px;
+      }
+      .anagrafica {
+        display: flex;
+      }
+      .contatti{
+      border:0.5px solid blue;
+      padding:5px;
+      margin-left:25px;
+        }
+        .contatti:hover{
+          cursor:pointer;
+          background-color: lightblue;
+          transition: 0.2s;
+        }
+        .video{
+          display: flex;
+          justify-content: space-around;
+          }
+          .musica{
+            background-color: lightgray
+            }
+            .mappa{
+            background-color:lightgray
+          }
+              #mappa {
+                display: none;
+              }
+              .lavoro {
+                background-color: lightblue;
+                padding-bottom: 40px;
+              }
+              .esperienza1 {
+              background-color: white;
+              width:250px;
+              padding: 15px;
+              }
+              .posizioni {
+                display:flex;
+                justify-content: space-evenly
+              }
+              .loghi{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 50px;
+              }
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      <header class="titolo">
+        <h1>Ahmed Refai</h1>
+        <marquee class="scorre">@Refai_03</marquee>
+      </header>
+<hr>
+      <main class="anagrafica"
+
+        <div class="foto">
+        <img src="foto.png" width="1000" alt="foto profilo">
+
+        </div>
+<div class="informazioni">
+   <ul>
+  <li> data di nascita:00/00/00</li>
+  <li> luogo di nascita: luogo</li>
+  <li>altezza:00.00m</li>
+</ul>
+  <span class="contatti">
+    <a href="ahmed.abdelmonem69@icloud.com">contattami</a>
+    </span>
+</div>
+      </main>
+      <div class="musica">
+        <h4 onclick="musicaAppare()">musica</h4>
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u9VFuUuuGtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QDfy5xrFe0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="lavoro">
+        <h4>esperienze lavorative</h4>
+        <div class="posizioni">
+          <a href="https://www.syntaxsc.it/"target="-blank">
+        <div class="esperienza1">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          <h5>tecnico informatico</h5>
+          <p><i>SYNTAX</i></p>
+          <br>2022</p>
+        </div>
+      </a>
+
+        <div class="esperienza1">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          <h5>tecnico informatico</h5>
+          <p><i>SYNTAX</i></p>
+          <br>2022</p>
+        </div>
+          </div>
+
+
+          <div>
+            <h4 onclick="mappaAppare()">mappa</h4>
+            <div id="mappa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22363.053231341775!2d9.21423885!3d45.522524849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1674637457819!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+      <footer>
+        <div class="loghi">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+      </footer>
+<script>
+var a=0;
+function mappaAppare() {
+  if (a==0)  {
+    document.getElementById('mappa').style.display = "flex";
+    a=1;
+  }
+  else if (a==1) {
+   document.getElementById('mappa').style.display = "none";
+   a = 0;
+  }
+
+}
+
+console.log("js funziona");
+function musicaAppare(){
+  console.log("musicaAppare sta funzionando")
+}
+
+</script>
+</body>
+
+</html>
